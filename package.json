@@ -1,0 +1,14 @@
+{
+  "name": "regional-climate-xai-root",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "npm run dev --prefix weather-ai-project/frontend",
+    "dev:backend": "cd weather-ai-project/backend && python app.py",
+    "install:frontend": "npm install --prefix weather-ai-project/frontend",
+    "build": "npm run build --prefix weather-ai-project/frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

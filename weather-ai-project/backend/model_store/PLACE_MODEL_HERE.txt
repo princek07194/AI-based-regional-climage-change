@@ -1,0 +1,8 @@
+Put your trained model file here:
+
+  weather_prediction_model.pkl
+
+Full path:
+  backend/model_store/weather_prediction_model.pkl
+
+Without this file, /api/predict returns an error and predictions will not work.
